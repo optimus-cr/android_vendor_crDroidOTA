@@ -1,6 +1,24 @@
 ====================
-     01-11-2026
+     01-02-2026
 ====================
+
+Synced with latest crDroid & LineageOS sources 
+
+- Added High Touch Sampling Rate
+-Added Display Saturation
+- Improved Audio Output
+- Included firmware
+- Switched to QTI Vibrator Service
+- Enabled 120FPS for games
+- SELinux & property cleanups
+- Updated display, audio & media components
+- Camera & graphics tweaks
+- Updated Pixel stuff
+- Updated GApps to QPR1
+- Switched Xiaomi Dolby → - Common Dolby
+- Updated GameBar
+- Included Quick Tap
+📲 OTA pushed — enjoy the build! ❤️
 
 
    * frameworks/base
