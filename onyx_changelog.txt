@@ -1,144 +1,152 @@
 ====================
-     01-02-2026
+     03-24-2026
 ====================
 
-Synced with latest crDroid & LineageOS sources 
-
-- Added High Touch Sampling Rate
--Added Display Saturation
-- Improved Audio Output
-- Included firmware
-- Switched to QTI Vibrator Service
-- Enabled 120FPS for games
-- SELinux & property cleanups
-- Updated display, audio & media components
-- Camera & graphics tweaks
-- Updated Pixel stuff
-- Updated GApps to QPR1
-- Switched Xiaomi Dolby → - Common Dolby
-- Updated GameBar
-- Included Quick Tap
-📲 OTA pushed — enjoy the build! ❤️
-
-
-   * frameworks/base
-8b3d4f43b SystemUI: Fix default font feature on lockscreen
-
-   * lineage/hudson
-e00b818 Regenerate device dependency mappings
-
-   * packages/apps/GameSpace
-f5d398f Merge pull request #126 from mukesh22584/16.0
-
-   * packages/apps/Launcher3
-a9bf3ea Revert "Add logs for split screen RemoteAnimationTargets"
-
-   * vendor/addons
-3b1b7ad0 addons: Update fonts_customization.xml for google fonts
-
-   * vendor/lineage
-90eeb17 overlay: Use google sans flex for lockscreen clock
-
-====================
-     01-10-2026
-====================
-
-   * android
-fea6bb9 manifest: Untrack LMOSystemUIClock
+   * bionic
+4099347bb libc: Simplify __swhatbuf() by removing filesystem block size optimization
 
    * device/xiaomi/onyx
-efa5ae9 build erros
-90295d7 Remove unnecessary merge conflict markers from config.xml
-26e6a77 Delete color mode options from config.xml
+3bc3502 fixup! onxy: Build and configure xiaomi biometrics aidl
+e78a1d9 add gapps pakcage
 
-   * lineage-sdk
-0164b4e sdk: SelfRemovingPreference: set visibility at early stage
+   * frameworks/base
+354e36f6af82 audio: fix direct byte buffer not release
+
+   * lineage/hudson
+71e5f7a Regenerate device dependency mappings
 
    * lineage/mirror
-e7787e1 Updated to 09-Jan-2026 23:01 UTC
-
-====================
-     01-09-2026
-====================
-
-
-   * lineage/wiki
-aee498f wiki: Fix validate.rb parallel execution exit status
-
-====================
-     01-08-2026
-====================
-
-====================
-     01-07-2026
-====================
+7337ce1 Updated to 23-Mar-2026 11:01 UTC
 
    * lineage/scripts
-e1726c4 dev: rro: Read statement's module the safe way
+06a7fe6 build-webview: Update default webview to 146.0.7680.119
 
-   * vendor/qcom/opensource/power
-4914c6f config: lahaina: Remove duplicate camera 30FPS SHDR hint
+   * packages/apps/Twelve
+7f66180 Twelve: Remove intermediary flows
 
-====================
-     01-06-2026
-====================
+   * packages/apps/Updater
+884d35b Update updater_server_url to new repository URL
 
-   * packages/apps/AudioFX
-6fb1a15 AudioFX: Optimize and shrink resources
+   * packages/inputmethods/LatinIME
+0afbd02c4 remove launcher icon
 
-====================
-     01-05-2026
-====================
+   * vendor/addons
+ccae8eb0 addons: Update GlanceableHub overlays
 
 ====================
-     01-04-2026
+     03-23-2026
 ====================
 
-   * device/lineage/sepolicy
-3f38772 sepolicy: Label ro.surface_flinger.blur_disabled_by_default
+   * external/chromium-webview/prebuilt/arm
+30f362b Update Chromium Webview arm to 146.0.7680.153
 
-   * frameworks/native
-82f349e Add dalvik-heap device configs for 8/12/16 GiB devices
+   * external/chromium-webview/prebuilt/arm64
+61a5fb3 Update Chromium Webview arm64 to 146.0.7680.153
 
-   * lineage/website
-18f1b58 Make local bundle/vendor install of Jekyll easier
+   * external/chromium-webview/prebuilt/x86
+8e3d192 Update Chromium Webview x86 to 146.0.7680.153
 
-   * packages/apps/FaceUnlock
-0a35109 FaceUnlock: Add ACCESS_SURFACE_FLINGER permission to manifest
+   * external/chromium-webview/prebuilt/x86_64
+63a226c Update Chromium Webview x86_64 to 146.0.7680.153
 
-====================
-     01-03-2026
-====================
+   * hardware/qcom-caf/common
+6c12ae9 fcm: Add entry for version up to 5 of QConfig AIDL interface
 
-====================
-     01-02-2026
-====================
-
-   * frameworks/native
-0c9086e Reduce thread scheduling overhead
-
-   * packages/apps/Aperture
-0926cc7 Automatic translation import
+   * lineage/wiki
+96de889b wiki: Update minimum hardware requirements to build
 
    * packages/apps/crDroidSettings
-401440b New Crowdin updates (#1284)
+045f67b crdroid: Introduce Clock face feature
+
+   * vendor/apn
+ac62ddd apn: Update Rogers + MVNOs
+
+====================
+     03-22-2026
+====================
+
+   * external/chromium-webview/patches
+b9cadca Update Chromium Webview to 146.0.7680.153
+
+====================
+     03-21-2026
+====================
+
+====================
+     03-20-2026
+====================
+
+   * packages/apps/Launcher3
+1a89468a58 Launcher3: Implement advanced color picker with HSB and RGB controls for app drawer background
+
+====================
+     03-19-2026
+====================
+
+   * packages/apps/GameSpace
+baa4538 New translations (#135)
+
+   * packages/services/Car
+77cfd1e704 Dedupliate curl
+
+====================
+     03-18-2026
+====================
+
+   * hardware/knowles/athletico/sound_trigger_hal
+16e4d7f sound_trigger: iaxxx: Fix OOB read in callback message parsing
+
+====================
+     03-17-2026
+====================
+
+====================
+     03-16-2026
+====================
+
+   * bootable/recovery
+ce0b32fd allowing spl downgrade by default
+
+   * device/lineage/sepolicy
+1ad0084 sepolicy: Add rules to allow powerhal accessing IStates AIDL
+
+   * frameworks/av
+7bfda39e07 fix null derefence exception when surface is reset
+
+   * frameworks/native
+1b9df1f48d system_server LW_EVENT_SYNC_NATIVE_CRASH in InputDispatcher
+
+   * packages/apps/Aperture
+1604f24 Automatic translation import
+
+   * packages/apps/AudioFX
+19b3cde Automatic translation import
+
+   * packages/apps/Camelot
+87b816c Automatic translation import
+
+   * packages/apps/Glimpse
+72a1550 Automatic translation import
 
    * packages/modules/Wifi
-ad785f3 handle invalid password
+12357aa10d wifi: Clear user temporarily disabled list on forget connected network
 
-==============
-11/01/2026
-=============
-Device Fixup 
-* Latest source sync & fixes based on weeklies update 
-*  Updated kernel to v6.677 
-* Video call fixed (WhatsApp etc.)
-*  SystemUI lag/jitter fixed
-* Touch & performance improvements
-*  Charging control + Charging  improved 
-* Display saturation improved
-* GameBar updated ui improvement n overlays
-Much
-* Other more changes and improvements.  You will notice 
-* Dropped old Dolby Atmos changes
-* Added LunarisDolby, presets, new mods
+   * packages/resources/devicesettings
+a004aae Automatic translation import
+
+   * system/core
+506367b64 fs_mgr: Allow remount on a locked device
+
+   * vendor/crowdin
+3476fdc Automatic translation import
+
+====================
+     03-15-2026
+====================
+
+   * packages/apps/Settings
+bb33c0723a3 Settings: Hide ambient from search
+
+   * vendor/certification
+d62a7ff certification: Update from Android 16 QPR3
+
