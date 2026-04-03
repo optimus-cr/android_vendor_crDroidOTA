@@ -1,152 +1,163 @@
 ====================
-     03-24-2026
+     04-03-2026
 ====================
 
-   * bionic
-4099347bb libc: Simplify __swhatbuf() by removing filesystem block size optimization
-
-   * device/xiaomi/onyx
-3bc3502 fixup! onxy: Build and configure xiaomi biometrics aidl
-e78a1d9 add gapps pakcage
-
-   * frameworks/base
-354e36f6af82 audio: fix direct byte buffer not release
-
-   * lineage/hudson
-71e5f7a Regenerate device dependency mappings
-
-   * lineage/mirror
-7337ce1 Updated to 23-Mar-2026 11:01 UTC
-
-   * lineage/scripts
-06a7fe6 build-webview: Update default webview to 146.0.7680.119
-
-   * packages/apps/Twelve
-7f66180 Twelve: Remove intermediary flows
-
-   * packages/apps/Updater
-884d35b Update updater_server_url to new repository URL
-
-   * packages/inputmethods/LatinIME
-0afbd02c4 remove launcher icon
-
-   * vendor/addons
-ccae8eb0 addons: Update GlanceableHub overlays
-
-====================
-     03-23-2026
-====================
-
-   * external/chromium-webview/prebuilt/arm
-30f362b Update Chromium Webview arm to 146.0.7680.153
-
-   * external/chromium-webview/prebuilt/arm64
-61a5fb3 Update Chromium Webview arm64 to 146.0.7680.153
-
-   * external/chromium-webview/prebuilt/x86
-8e3d192 Update Chromium Webview x86 to 146.0.7680.153
-
-   * external/chromium-webview/prebuilt/x86_64
-63a226c Update Chromium Webview x86_64 to 146.0.7680.153
-
-   * hardware/qcom-caf/common
-6c12ae9 fcm: Add entry for version up to 5 of QConfig AIDL interface
-
-   * lineage/wiki
-96de889b wiki: Update minimum hardware requirements to build
-
-   * packages/apps/crDroidSettings
-045f67b crdroid: Introduce Clock face feature
-
-   * vendor/apn
-ac62ddd apn: Update Rogers + MVNOs
-
-====================
-     03-22-2026
-====================
-
-   * external/chromium-webview/patches
-b9cadca Update Chromium Webview to 146.0.7680.153
-
-====================
-     03-21-2026
-====================
-
-====================
-     03-20-2026
-====================
-
-   * packages/apps/Launcher3
-1a89468a58 Launcher3: Implement advanced color picker with HSB and RGB controls for app drawer background
-
-====================
-     03-19-2026
-====================
-
-   * packages/apps/GameSpace
-baa4538 New translations (#135)
-
-   * packages/services/Car
-77cfd1e704 Dedupliate curl
-
-====================
-     03-18-2026
-====================
-
-   * hardware/knowles/athletico/sound_trigger_hal
-16e4d7f sound_trigger: iaxxx: Fix OOB read in callback message parsing
-
-====================
-     03-17-2026
-====================
-
-====================
-     03-16-2026
-====================
-
-   * bootable/recovery
-ce0b32fd allowing spl downgrade by default
+   * android
+c1daaf2 manifest: Track AxThemeStore
 
    * device/lineage/sepolicy
-1ad0084 sepolicy: Add rules to allow powerhal accessing IStates AIDL
+16c612f Adding theme engine sepolicies
 
-   * frameworks/av
-7bfda39e07 fix null derefence exception when surface is reset
+   * device/xiaomi/onyx
+c50ab5c Remove audio jack detection configuration
+35b5dbc onyx: Setup permissions on smart_night xm_power node
+db0c687 onyx: Beautify RROs
+8c29173 Revert "onyx: Enable concurrent restricted connectivity"
+3687b77 Revert "onyx: disable FW roaming when in idle mode"
+4485aaf onyx: overlay: Remove Dialer overlay
+3e9cc77 onyx: overlay: Provide MIUI color mode options
+998deca onyx: sepolicy: Allow parts to use displayfeature
+126754a onyx: Introduce displayfeature color service for MIUI color modes
+dbe119a onyx: Reverse displayfeature_aidl ndk interface
+397f2f5 onyx: Implement HTSR toggle
+9e9ace6 onyx: Bump touch sampling rates
+dcf879d onyx: Remove fwk-detect lib from PRODUCT_PACKAGES
+fa81d94 onyx: Switch to new soong var for xiaomi biometrics
+42b03af init: fix Termux apt failure (devpts / ptmx)
+63e3743 onyx: rootdir: Restrict apps access to /proc/net/unix * Banking apps read the file /proc/net/unix to   check system modifications, (in our case, custom rom)   Let's avoid this by chmod it 440.
+32c28d7 Add config_defaultMinRefreshRate to config.xml
+67569e6 Set default refresh support to 120 by default
+b8c54bd onyx: Switch to min and peak refresh rate selection
+57a96da onyx: rootdir: Switch thermal config to mgame
+9440fb9 onyx: Update from OS3.0.6.0.WOLMIXM
+f361aeb onyx: Switch to dummy micharge service
+3e5ab97 onyx: Reverse micharge ndk interface
+86684cb add gcam n brc
+eaee61e onyx: Add call record for USA and Germany
+cc86657 onyx: props: Expose aux cameras to com.android.camera and Aperture
+2161266 onyx: bluetooth: Fixing connecting BLE (bt 5.x) devices (smart watches, etc.)
+be5a8f6 onyx: overlay: Optimize auto brightness adjustment
+0b6b203 onyx: props: Force enable volte and wifi calling
+15dae76 Remove Smooth Display feature from config
+e71da85 onyx: props: Disable FRP
+a43736e onyx: TEMP set BUILD_BROKEN_PREBUILT_ELF_FILES to true
+57bf71a onyx: Add missing lib
+3a9407c onyx: Bring back dolby audio
+cc13c3a onyx: init: Drop I/O prefetcher
+19785e6 Revert "onyx: rootdir: Set thermal profile to 19"
+70b97ab Revert "onyx: Switch to NCM USB tethering"
 
-   * frameworks/native
-1b9df1f48d system_server LW_EVENT_SYNC_NATIVE_CRASH in InputDispatcher
+   * frameworks/base
+4eb3cf48800f Adding theme engine interface
+
+   * lineage/wiki
+0944d6dc wiki: rtwo: Correct MP of front camera and battery type
+
+   * packages/apps/AxThemeStore
+f5d61c2 AxThemeStore: Remove ui style section
+
+   * packages/apps/LMOFreeform
+7c9c6ee LMOFreeform: Prefer highest refresh rate display mode
+
+   * packages/apps/Updater
+4eec17d Update updater_server_url to new repository URL
+
+   * packages/apps/crDroidSettings
+7b5becc crdroid: Add AxThemeStore shortcut
+
+   * prebuilts/kernel-build-tools
+d0f6b0d Merge "update-prebuilts.sh: Fix incorrect CI URL in generated commit message" into main-kernel-2025
+
+   * vendor/addons
+eaf2c932 addons: Import ax compose sdk
+
+   * vendor/lineage
+e9788bd2 crdroid: Build AxThemeStore
+
+====================
+     04-02-2026
+====================
+
+   * lineage/hudson
+bb5ca2f hudson: Add Realme GT Neo6
 
    * packages/apps/Aperture
-1604f24 Automatic translation import
-
-   * packages/apps/AudioFX
-19b3cde Automatic translation import
-
-   * packages/apps/Camelot
-87b816c Automatic translation import
+8bb7658 Automatic translation import
 
    * packages/apps/Glimpse
-72a1550 Automatic translation import
+88a16b1 Automatic translation import
 
-   * packages/modules/Wifi
-12357aa10d wifi: Clear user temporarily disabled list on forget connected network
+   * packages/apps/Twelve
+384cc63 Automatic translation import
 
    * packages/resources/devicesettings
-a004aae Automatic translation import
-
-   * system/core
-506367b64 fs_mgr: Allow remount on a locked device
+6a49b53 Automatic translation import
 
    * vendor/crowdin
-3476fdc Automatic translation import
+87deede Automatic translation import
 
 ====================
-     03-15-2026
+     04-01-2026
 ====================
 
-   * packages/apps/Settings
-bb33c0723a3 Settings: Hide ambient from search
+   * lineage/crowdin
+a7b8261 config: Add hardware/xiaomi/packages/EsimSwitcher
 
-   * vendor/certification
-d62a7ff certification: Update from Android 16 QPR3
+   * lineage/mirror
+4f5f70f Updated to 01-Apr-2026 10:01 UTC
+
+====================
+     03-31-2026
+====================
+
+====================
+     03-30-2026
+====================
+
+   * lineage/scripts
+a73d39d pixel: Ignore theming_defaults overlay
+
+   * packages/apps/GameSpace
+0eda348 New Crowdin updates (#137)
+
+   * packages/apps/Launcher3
+b2359d9680 New Crowdin updates (#529)
+
+====================
+     03-29-2026
+====================
+
+====================
+     03-28-2026
+====================
+
+   * packages/apps/Car/SystemUI
+fbf595b7 HvacController: Switch DEBUG check to "ro.debuggable"
+
+   * tools/extract-utils
+409b495 extract_utils: Fix recovery extract
+
+   * vendor/apn
+cfc8a7b apn: Change mmsproxy schema from uri to string
+
+====================
+     03-27-2026
+====================
+
+====================
+     03-26-2026
+====================
+
+   * build/soong
+4b62e3fed soong: check_boot_jars: Whitelist Xiaomi Extensions
+
+   * frameworks/av
+a73eb19aae Fix PlanesLockGuard copy-assignment delete type
+
+====================
+     03-25-2026
+====================
+
+   * packages/inputmethods/LatinIME
+f21a3876f crdroid: strings: Update the Russian translation
 
